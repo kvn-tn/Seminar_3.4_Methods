@@ -6,6 +6,10 @@
 
 int GetSCountNum(int res) 
 {
+   if(res<0)
+   {
+    res = - res;
+   }
     int count =0;
     
     while(res>0)
@@ -15,6 +19,7 @@ int GetSCountNum(int res)
     }
     return count;
 }
+
 
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
