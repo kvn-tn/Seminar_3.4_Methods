@@ -11,7 +11,7 @@ int GetSCountNum(int res)
     while(res>0)
     {
         count++;
-        res/=10;
+        res/=10; // так как число res берет от int, то оно считает только целые числа.
     }
     return count;
 }
