@@ -4,17 +4,24 @@
 // 2, 4 -> 16
 
 Console.WriteLine("Введите число A");
-int numA = Convert.ToInt32(Console.ReadLine());
+int A = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите число B");
-int numB = Convert.ToInt32(Console.ReadLine());
+int B = Convert.ToInt32(Console.ReadLine());
 
 // Console.WriteLine (Math.Pow(numA, numB));
 
-int result = numA; 
-
-for (int i = 1; i < numB; i++) 
+int GetSumNum(int numA, int numB)
 {
-result = result * numA; 
+int result = 1; 
+
+for (int i = 0; i < numB; i++) 
+ {
+ result *= numA; 
+ }
+return result;
 }
-Console.WriteLine(result);
+
+int res = GetSumNum(A, B);
+Console.WriteLine(res);
+
