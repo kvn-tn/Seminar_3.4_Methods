@@ -31,10 +31,13 @@ Console.WriteLine(NumSum);
 
 // int [] GetArray(int[] array2)
 // {
-// for (int i = 1; i < array.Length; i+=2)
+// for (int i = 1; i < array.Length; i++)
 //     {
 //         array2[i]=new Random().Next(-10,100);
-//         NumSum = NumSum + array2[i];
+//         if(i%2 ==1)
+            // {
+            //     NumSum = NumSum + array2[i];
+            // } 
 //     }
 //     return array2;
 // }
